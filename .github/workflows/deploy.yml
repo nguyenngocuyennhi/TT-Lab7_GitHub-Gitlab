@@ -1,4 +1,4 @@
-name: Deploy HTML
+name: Deploy Bài 1 HTML
 
 on:
   push:
@@ -10,10 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Lấy mã nguồn
         uses: actions/checkout@v4
 
-      - name: Deploy
+      - name: Tạo thông tin deploy
+        run: |
+          date -u +"%d/%m/%Y %H:%M:%S UTC" > Bai1/deploy-info.txt
+
+      - name: Deploy lên InfinityFree
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
