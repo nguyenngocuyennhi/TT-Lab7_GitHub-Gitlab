@@ -1,5 +1,5 @@
 <?php
-$tenWebsite = "Lab 7 - PHP";
+$website = "Lab 7 - PHP";
 $thongBao = "PHP đang hoạt động trên website!";
 ?>
 
@@ -8,13 +8,13 @@ $thongBao = "PHP đang hoạt động trên website!";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $tenWebsite; ?></title>
+    <title><?php echo $website; ?></title>
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -25,7 +25,7 @@ $thongBao = "PHP đang hoạt động trên website!";
         }
 
         header {
-            background: rgba(255, 255, 255, 0.95);
+            background: white;
             padding: 20px 8%;
             display: flex;
             justify-content: space-between;
@@ -35,13 +35,13 @@ $thongBao = "PHP đang hoạt động trên website!";
         .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #6c3cff;
+            color: #5b3fd4;
         }
 
         nav a {
             text-decoration: none;
             color: #333;
-            margin-left: 25px;
+            margin-left: 20px;
             font-weight: bold;
         }
 
@@ -50,17 +50,17 @@ $thongBao = "PHP đang hoạt động trên website!";
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
             padding: 40px 20px;
         }
 
         .card {
             background: white;
-            max-width: 750px;
             width: 100%;
+            max-width: 750px;
             padding: 55px 40px;
+            text-align: center;
             border-radius: 25px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
         }
 
         .icon {
@@ -69,14 +69,14 @@ $thongBao = "PHP đang hoạt động trên website!";
         }
 
         h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
             color: #5b3fd4;
+            font-size: 40px;
+            margin-bottom: 15px;
         }
 
         .description {
-            font-size: 18px;
             color: #666;
+            font-size: 18px;
             line-height: 1.7;
             margin-bottom: 30px;
         }
@@ -100,10 +100,10 @@ $thongBao = "PHP đang hoạt động trên website!";
         }
 
         .feature {
-            background: #f4f1ff;
-            padding: 15px 25px;
-            border-radius: 12px;
+            background: #f1edff;
             color: #5b3fd4;
+            padding: 15px 22px;
+            border-radius: 10px;
             font-weight: bold;
         }
 
@@ -118,7 +118,9 @@ $thongBao = "PHP đang hoạt động trên website!";
 <body>
 
 <header>
-    <div class="logo"><?php echo $tenWebsite; ?></div>
+    <div class="logo">
+        <?php echo $website; ?>
+    </div>
 
     <nav>
         <a href="#">Trang chủ</a>
@@ -127,6 +129,7 @@ $thongBao = "PHP đang hoạt động trên website!";
 </header>
 
 <section class="hero">
+
     <div class="card">
 
         <div class="icon">🚀</div>
@@ -135,7 +138,7 @@ $thongBao = "PHP đang hoạt động trên website!";
 
         <p class="description">
             Website PHP được triển khai tự động thông qua
-            GitHub Actions lên hosting InfinityFree.
+            GitHub Actions lên InfinityFree.
         </p>
 
         <div class="success">
@@ -150,10 +153,11 @@ $thongBao = "PHP đang hoạt động trên website!";
         </div>
 
     </div>
+
 </section>
 
 <footer>
-    Lab 7 - Deploy tự động ứng dụng
+    Lab 7 - Bài 2 - PHP
 </footer>
 
 </body>
